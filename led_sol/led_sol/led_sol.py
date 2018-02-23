@@ -1,3 +1,4 @@
+
 def create(x):
     #newRow = dict.fromkeys(range(0,10), False)
     
@@ -9,7 +10,7 @@ def create(x):
 
 
 
-def turnOnOrOf():
+def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY):
     
     newMatrix = create(L)
     

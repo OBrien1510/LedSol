@@ -10,13 +10,20 @@ from led_sol import led_sol
 
 
 class TestLed_sol(unittest.TestCase):
-    """Tests for `led_sol` package."""
+    
 
     def setUp(self):
-        """Set up test fixtures, if any."""
+        matrix = led_sol.led_sol.create(999)
+    
+        led_sol.led_sol.turnOnOrOff(499, 500, 499, 500)
+    
+        print(matrix[499][500])
 
     def tearDown(self):
         """Tear down test fixtures, if any."""
 
     def test_000_something(self):
         """Test something."""
+        
+        
+    
