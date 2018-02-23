@@ -8,25 +8,18 @@ def create(x):
     return matrix
 
 
-newMatrix = create(inputL)
 
-
-
-
-         
-     
-coordsFromX = 499
-coordsFromY = 499
-coordsToX = 500
-coordsToY = 500
-
-for i in range(coordsFromX, coordsToX+1):
+def turnOnOrOf():
     
-    for j in range(coordsFromY, coordsToY+1):
+    newMatrix = create(L)
+    
+    for i in range(coordsFromX, coordsToX+1):
+    
+        for j in range(coordsFromY, coordsToY+1):
         
         
-        if newMatrix[i][j] == False:
-            newMatrix[i][j] = True
+            if newMatrix[i][j] == False:
+                newMatrix[i][j] = True
 # -*- coding: utf-8 -*-
 
 """Main module."""
