@@ -6,18 +6,19 @@
 
 import unittest
 
-from led_sol import led_sol
+from ledsol import ledsol
 
 
 class TestLed_sol(unittest.TestCase):
     
 
     def setUp(self):
-        matrix = led_sol.create(999)
+        
+        matrix = ledsol.create(999)
     
-        led_sol.turnOnOrOff(499, 500, 499, 500)
+        ledsol.turnOnOrOff(499, 500, 499, 500, matrix)
     
-        print(matrix[499][500])
+        print(matrix[500])
 
     def tearDown(self):
         """Tear down test fixtures, if any."""

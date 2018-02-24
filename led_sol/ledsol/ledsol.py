@@ -1,6 +1,4 @@
 
-
-
 def create(x):
     #newRow = dict.fromkeys(range(0,10), False)
     
@@ -11,19 +9,18 @@ def create(x):
     return matrix
 
 
-
-def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY):
-    
-    L = 999
-    newMatrix = create(L)
+def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, m):
     
     for i in range(coordsFromX, coordsToX+1):
     
         for j in range(coordsFromY, coordsToY+1):
         
         
-            if newMatrix[i][j] == False:
-                newMatrix[i][j] = True
+            if m[i][j] == False:
+                m[i][j] = True
+                
+                
+    return m
 # -*- coding: utf-8 -*-
 
 """Main module."""
