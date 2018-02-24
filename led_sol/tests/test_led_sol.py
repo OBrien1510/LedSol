@@ -13,9 +13,9 @@ class TestLed_sol(unittest.TestCase):
     
 
     def setUp(self):
-        matrix = led_sol.led_sol.create(999)
+        matrix = create(999)
     
-        led_sol.led_sol.turnOnOrOff(499, 500, 499, 500)
+        led_sol.turnOnOrOff(499, 500, 499, 500)
     
         print(matrix[499][500])
 
