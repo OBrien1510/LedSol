@@ -20,8 +20,6 @@ def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, m):
                 m[i][j] = True
                 
                 
-    return m
 # -*- coding: utf-8 -*-
 
 """Main module."""
-
