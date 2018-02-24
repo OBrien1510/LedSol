@@ -18,7 +18,7 @@ class TestLed_sol(unittest.TestCase):
     
         ledsol.turnOnOrOff(499, 500, 499, 500, matrix)
     
-        print(matrix[500])
+        print(matrix[500][500])
 
     def tearDown(self):
         """Tear down test fixtures, if any."""
