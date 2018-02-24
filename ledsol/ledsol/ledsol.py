@@ -9,15 +9,15 @@ def create(x):
     return matrix
 
 
-def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, m):
+def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x):
     
     for i in range(coordsFromX, coordsToX+1):
     
         for j in range(coordsFromY, coordsToY+1):
         
         
-            if m[i][j] == False:
-                m[i][j] = True
+            if x[i][j] == False:
+                x[i][j] = True
                 
                 
 # -*- coding: utf-8 -*-
