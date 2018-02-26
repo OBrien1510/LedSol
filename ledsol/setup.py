@@ -33,6 +33,11 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     description="A program to turn LED lights on or off",
+    entry_points={
+        'console_scripts': [
+            'ledsol=ledread.cli:printFile',
+        ],
+    },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
