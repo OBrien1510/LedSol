@@ -35,7 +35,7 @@ setup(
     description="A program to turn LED lights on or off",
     entry_points={
         'console_scripts': [
-            'ledsol=ledread.cli:printFile',
+            'ledsol=ledsol.cli:printFile',
         ],
     },
     install_requires=requirements,
