@@ -1,3 +1,12 @@
+from ledread import ledread
+
+
+file = ledread.read()
+
+def printFile():
+    for i in file:
+        print(i)
+
 
 def create(x):
     #newRow = dict.fromkeys(range(0,10), False)
@@ -20,6 +29,12 @@ def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x):
                 x[i][j] = True
                 
                 
+                
+                
+
 # -*- coding: utf-8 -*-
+
+
+
 
 """Main module."""
