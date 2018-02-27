@@ -34,7 +34,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'ledsol=ledsol:main',
+            'ledsol=ledsol.ledsol:main',
         ],
     },
     description="A program to turn LED lights on or off",

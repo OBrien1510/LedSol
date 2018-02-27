@@ -14,11 +14,17 @@ class TestLed_sol(unittest.TestCase):
 
     def setUp(self):
         
-        matrix = ledsol.create(999)
+        L = 9
+        
+        matrix = ledsol.create(L)
+        
     
-        ledsol.turnOnOrOff(499, 500, 499, 500, matrix)
+        ledsol.turnOnOrOff(0, 9, 0, 9, matrix)
+        
+        for i in matrix:
+            print(i)
     
-        print(check(matrix))
+        print(ledsol.check(matrix, L))
         
     def tearDown(self):
         """Tear down test fixtures, if any."""
