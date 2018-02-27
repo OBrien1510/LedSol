@@ -35,6 +35,9 @@ def check(x):
                 count+=1
                 
     return count 
+
+def main():
+    print("hello")
                 
                 
                 

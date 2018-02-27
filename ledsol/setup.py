@@ -32,11 +32,12 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    description="A program to turn LED lights on or off",
     entry_points={
-        [
+        'console_scripts': [
+            'ledsol=ledsol:main',
         ],
     },
+    description="A program to turn LED lights on or off",
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
