@@ -1,8 +1,11 @@
+from ledread import ledread
 
-def printFile():
-    for i in file:
-        print(i)
 
+def main():
+    matrix = ledread.firstLine()
+    finalMatrix = ledread.read(matrix)
+    count = check(finalMatrix)
+    print("number of lights on at end of sequence: ",count)
 
 def create(x):
     #newRow = dict.fromkeys(range(0,10), False)
@@ -22,13 +25,15 @@ def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x):
             if x[i][j] == False:
                 x[i][j] = True
                 
-def check(x, L):
+def check(x):
     count = 0
-    for i in range(0,L):
-        for j in range(0,L):
-                if x[i][j] and x[i+1][j+1] and x[i][j+1] and x[i+1][j]:
-                    x[i][j] = False
-                    count+=1
+    for i in range(0,len(x)):
+        
+        for j in range(1, len(x[0])):
+            
+            if x[i][j] == True:
+                
+                count+=1
                     
     return count 
 
