@@ -15,15 +15,20 @@ def create(x):
     return matrix
 
 
-def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x):
+def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x, cmd):
     
     for i in range(coordsFromX, coordsToX+1):
     
         for j in range(coordsFromY, coordsToY+1):
         
         
-            if x[i][j] == False:
+            if x[i][j] == False and (cmd == "turnon" or cmd == "switch"):
                 x[i][j] = True
+            
+            elif x[i][j] == True and (cmd == "turnoff" or cmd == "switch"):
+                x[i][j] = False
+                
+    return x
                 
 def check(x):
     count = 0
