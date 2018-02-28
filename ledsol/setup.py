@@ -38,7 +38,12 @@ setup(
         ],
     },
     description="A program to turn LED lights on or off",
-    install_requires=requirements,
+    install_requires=[
+        'ledread'
+        ],
+    dependency_links=[
+        'git+https://github.com/OBrien1510/ledread@master#egg=ledread-0'
+        ],
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
