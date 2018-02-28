@@ -3,9 +3,10 @@ from ledread import ledread
 
 def main():
     matrix = ledread.firstLine()
-    finalMatrix = ledread.read(matrix)
-    count = check(finalMatrix)
-    print("number of lights on at end of sequence: ",count)
+    if matrix:
+        finalMatrix = ledread.read(matrix)
+        count = check(finalMatrix)
+        print("number of lights on at end of sequence: ",count)
 
 def create(x):
    
