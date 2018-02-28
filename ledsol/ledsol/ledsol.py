@@ -10,7 +10,7 @@ def main():
 
 def create(x):
    
-    matrix = [[False]*(x+1) for n in range(x+1)]
+    matrix = [[False]*(x) for n in range(x)]
     return matrix
 
 
@@ -33,7 +33,7 @@ def check(x):
     count = 0
     for i in range(0,len(x)):
         
-        for j in range(1, len(x[0])):
+        for j in range(0, len(x[0])):
             
             if x[i][j] == True:
                 
