@@ -8,9 +8,7 @@ def main():
     print("number of lights on at end of sequence: ",count)
 
 def create(x):
-    #newRow = dict.fromkeys(range(0,10), False)
-    
-    #matrix = dict.fromkeys(range(x+1), (dict.fromkeys(range(x), False)))
+   
     matrix = [[False]*(x+1) for n in range(x+1)]
     return matrix
 
