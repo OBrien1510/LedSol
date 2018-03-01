@@ -14,16 +14,16 @@ def create(x):
     return matrix
 
 
-def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x, cmd):
-    for i in range(coordsFromX, coordsFromY+1):
+def turnOnOrOff(coordsFromX, coordsFromY, coordsToX, coordsToY, x, cmd):
+    for i in range(coordsFromX, coordsToX+1):
     
-        for j in range(coordsToX, coordsToY+1):
+        for j in range(coordsFromY, coordsToY+1):
         
-            if x[i][j] == False and (cmd == "turnon" or cmd == "switch"):
-                x[i][j] = True
+            if x[j][i] == False and (cmd == "turnon" or cmd == "switch"):
+                x[j][i] = True
             
-            elif x[i][j] == True and (cmd == "turnoff" or cmd == "switch"):
-                x[i][j] = False
+            elif x[j][i] == True and (cmd == "turnoff" or cmd == "switch"):
+                x[j][i] = False
                 
     return x
                 
