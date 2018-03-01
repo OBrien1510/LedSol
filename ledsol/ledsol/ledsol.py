@@ -15,11 +15,9 @@ def create(x):
 
 
 def turnOnOrOff(coordsFromX, coordsToX, coordsFromY, coordsToY, x, cmd):
+    for i in range(coordsFromX, coordsFromY+1):
     
-    for i in range(coordsFromX, coordsToX+1):
-    
-        for j in range(coordsFromY, coordsToY+1):
-        
+        for j in range(coordsToX, coordsToY+1):
         
             if x[i][j] == False and (cmd == "turnon" or cmd == "switch"):
                 x[i][j] = True
