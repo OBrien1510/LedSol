@@ -5,6 +5,8 @@ def main():
     matrix = ledread.firstLine()
     if matrix:
         finalMatrix = ledread.read(matrix)
+        for i in finalMatrix[::-1]:
+            print(i)
         count = check(finalMatrix)
         print("number of lights on at end of sequence: ",count)
 
@@ -15,15 +17,15 @@ def create(x):
 
 
 def turnOnOrOff(coordsFromX, coordsFromY, coordsToX, coordsToY, x, cmd):
-    for i in range(coordsFromX, coordsToX+1):
+    for i in range(coordsFromY, coordsToY+1):
     
-        for j in range(coordsFromY, coordsToY+1):
+        for j in range(coordsFromX, coordsToX+1):
         
-            if x[j][i] == False and (cmd == "turnon" or cmd == "switch"):
-                x[j][i] = True
+            if x[i][j] == False and (cmd == "turnon" or cmd == "switch"):
+                x[i][j] = True
             
-            elif x[j][i] == True and (cmd == "turnoff" or cmd == "switch"):
-                x[j][i] = False
+            elif x[i][j] == True and (cmd == "turnoff" or cmd == "switch"):
+                x[i][j] = False
                 
     return x
                 

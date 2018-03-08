@@ -18,6 +18,10 @@ led_sol
 
 A program to turn LED lights on or off
 
+To run this you must first install the ledread module from https://github.com/OBrien1510/ledread or alternatively when installing add the following command after pip install "--process-dependency-links".
+
+To run the module simply type ledsol --input "path/to/file OR URL" in the terminal
+
 
 * Free software: MIT license
 * Documentation: https://led-sol.readthedocs.io.
